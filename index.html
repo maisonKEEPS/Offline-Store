@@ -601,7 +601,7 @@ const store = {
 
 /* ---------- backend: Apps Script when deployed, in-memory demo otherwise ---------- */
 /* Where the page runs: inside Google (Apps Script) or on GitHub Pages (calls the Apps Script web app below). */
-const API_URL = "https://maisonkeeps.github.io/Offline-Store/";   // GitHub Pages copy only: paste this system's web app link (…/exec). Ignored inside Google.
+const API_URL = "https://script.google.com/macros/s/AKfycbyYYNxMYDsTjiUAvWVyUj15n7uD2fuOE0nHE4sfJ6a9oII7T46DF-uLFq11fNpefhNEvA/exec";   // GitHub Pages copy only: paste this system's web app link (…/exec). Ignored inside Google.
 const IN_GOOGLE = typeof google !== "undefined" && google.script && google.script.run;
 const REMOTE = !IN_GOOGLE && /^https:\/\/script\.google\.com\/.+\/exec/.test(API_URL);
 const LIVE = IN_GOOGLE || REMOTE;
